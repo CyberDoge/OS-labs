@@ -1,0 +1,3 @@
+/home/cyberdoge/Project/lab/Lab1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/cyberdoge/Project/lab/Lab1/cmake-build-debug/CMakeFiles/Lab1.dir
+/home/cyberdoge/Project/lab/Lab1/cmake-build-debug/CMakeFiles/edit_cache.dir

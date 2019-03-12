@@ -1,0 +1,9 @@
+//
+// Created by cyberdoge on 12.03.19.
+//
+
+#include "Sin.h"
+#include <math.h>
+double Sin::countValue(double value) {
+    return sin(value);
+}
