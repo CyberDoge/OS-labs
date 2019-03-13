@@ -8,7 +8,7 @@
 
 #include "Function.h"
 
-class Cos : Function {
+class Cos : public Function {
     double countValue(double value) override;
 };
 

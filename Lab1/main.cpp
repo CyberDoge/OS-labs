@@ -1,21 +1,34 @@
 #include <iostream>
-#include <cstring>
+#include <vector>
+#include <math.h>
 #include "function/Function.h"
+#include "function/Cos.h"
+#include "function/Sin.h"
 
 using namespace std;
 
-string mathSympols = "+-*/=";
+static const string mathSymbols = "+-*/=";
 
-Function *parseStringWithFunctions(string function) {
-    int i = 0, r = 0, start = 0;
+vector<string> *parseStringWithFunctions(string function) {
+    unsigned long i = 0;
+    unsigned long start = 0;
+    auto *res = new vector<string>();
     while (function[i] != '\0') {
-        if (mathSympols.find(function[i])) {
-            function.substr(start, i);
-            start = i;
-            r++;
+        if (mathSymbols.find(function[i]) != string::npos) {
+            res->push_back(function.substr(start, i - start));
+            res->push_back(function.substr(start, i - start));
+            start = i + 1;
         }
+        ++i;
     }
-    return nullptr;
+    res->push_back(function.substr(start, i - start));
+    return res;
+}
+
+
+
+double f(double x){
+    return -exp(x);
 }
 
 int main() {
@@ -23,9 +36,14 @@ int main() {
     double p, p0 = 1, eps = 0.00001;
     int i = 0, N = 10000;
 
-    string function;
-
-    cin >> function;
+    string function = "x+e^(x)=0";
+    p = f(0);
+    do{
+        p0=p;
+        p=f(p0);
+    }while (abs(p-p0) > eps);
+    cout<<p;
+    //cin >> function;
     parseStringWithFunctions(function);
 
 
