@@ -8,10 +8,12 @@
 
 #include "Function.h"
 
-class Sin : Function {
+class Sin : public Function {
 public:
 private:
     double countValue(double value) override;
+
+    double revers(double value) override;
 };
 
 

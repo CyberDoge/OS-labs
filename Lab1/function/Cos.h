@@ -10,6 +10,9 @@
 
 class Cos : public Function {
     double countValue(double value) override;
+
+public:
+    double revers(double value) override;
 };
 
 

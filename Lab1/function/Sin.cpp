@@ -5,5 +5,9 @@
 #include "Sin.h"
 #include <math.h>
 double Sin::countValue(double value) {
-    return sin(value);
+    return -sin(value);
+}
+
+double Sin::revers(double value) {
+    return asin(value);
 }

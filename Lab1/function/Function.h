@@ -9,6 +9,8 @@
 class Function {
 public:
     virtual double countValue(double value) = 0;
+
+    virtual double revers(double value) = 0;
 };
 
 
