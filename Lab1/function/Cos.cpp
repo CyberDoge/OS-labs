@@ -4,8 +4,9 @@
 
 #include "Cos.h"
 #include <math.h>
+
 double Cos::countValue(double value) {
-    return -cos(value);
+    return -k * cos(value);
 }
 
 double Cos::revers(double value) {

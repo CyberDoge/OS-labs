@@ -10,7 +10,7 @@
 
 using namespace std;
 
-Function *parseString(const string f, bool negative = false) {
+Function *parseString(const string &f) {
     const unsigned long bracketIndex = f.rfind('(');
     if (bracketIndex == string::npos) {
         throw runtime_error("bad input");
@@ -30,30 +30,29 @@ Function *parseString(const string f, bool negative = false) {
 
 //    function->setArg(stod(f.substr(bracketIndex, f.rfind(')'))));
     auto mulIndex = f.rfind('*');
-    double k = pow(-1, negative);
     if (mulIndex != string::npos) {
-        function->setK(k * stod(f.substr(mulIndex)));
-    } else {
-        function->setK(k);
+        function->setK(stod(f.substr(0, mulIndex)));
     }
     return function;
 
 }
 
 vector<Function *> *functionFactory(const string &function) {
-    unsigned long i = 0;
-    unsigned long start = 0;
+    unsigned long i = function.size();
+    unsigned long start = i;
     auto *res = new vector<Function *>();
-    while (function[i] != '\0') {
+    while (i != 0) {
         if (function[i] == '+') {
-            res->push_back(parseString(function.substr(start, i - start)));
-            start = i + 1;
+            res->push_back(parseString(function.substr(i, start)));
+            start = i;
         } else if (function[i] == '-') {
-            res->push_back(parseString(function.substr(start, i - start), true));
-            start = i + 1;
+            res->push_back(parseString(function.substr(i, start)));
+            start = i;
         }
-        ++i;
+        --i;
     }
+    res->push_back(parseString(function.substr(i, start)));
+
     return res;
 }
 
@@ -61,7 +60,8 @@ double f(double x, vector<Function *> functions) {
     for (int i = 1; i < functions.size(); i++) {
         x += functions[i]->countValue(x);
     }
-
+    cout<<x<<";";
+    cout<<functions[0]->revers(x)<<endl;
     return functions[0]->revers(x);
     //return asin(-exp(x));
 }
@@ -71,12 +71,12 @@ int main() {
     double p, p0, eps = 0.00001;
     int i = 0, N = 10000;
 
-    string function = "cos(x)-e^(x)=0";
+    string function = "-15*cos(x)+1*e^(x)=0";
 
 
     vector<Function *> *functions = functionFactory(function);
 
-    p = f(0, *functions);
+    p = f(0.3, *functions);
     do {
         p0 = p;
         p = f(p0, *functions);

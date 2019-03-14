@@ -7,7 +7,7 @@
 
 class Function
 {
-  private:
+protected:
     double k = 1;
     double arg = 1;
 

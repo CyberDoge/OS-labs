@@ -5,7 +5,7 @@
 #include "Sin.h"
 #include <math.h>
 double Sin::countValue(double value) {
-    return -sin(value);
+    return k*-sin(value);
 }
 
 double Sin::revers(double value) {

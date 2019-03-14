@@ -6,7 +6,7 @@
 #include <math.h>
 
 double Ln::countValue(double value) {
-    return -log(value);
+    return k*-log(value);
 }
 
 double Ln::revers(double value) {

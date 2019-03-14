@@ -6,7 +6,7 @@
 #include <math.h>
 
 double Exp::countValue(double value) {
-    return -exp(value);
+    return k*-exp(value);
 }
 
 double Exp::revers(double value) {
