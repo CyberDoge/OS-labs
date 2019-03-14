@@ -5,81 +5,84 @@
 #include "function/Cos.h"
 #include "function/Sin.h"
 #include "function/Exp.h"
+#include "function/Ln.h"
 
 
 using namespace std;
 
-static const string mathSymbols = "+-*/";
+Function *parseString(const string f, bool negative = false) {
+    const unsigned long bracketIndex = f.rfind('(');
+    if (bracketIndex == string::npos) {
+        throw runtime_error("bad input");
+    }
 
-vector<string> *parseStringWithFunctions(const string function) {
+    Function *function;
+    if (f.rfind("cos") != string::npos) {
+        function = new Cos();
+    } else if (f.rfind("sin") != string::npos) {
+        function = new Sin();
+    } else if (f.rfind("e^") != string::npos) {
+        function = new Exp();
+    } else if (f.rfind("ln") != string::npos) {
+        function = new Ln();
+    } else throw runtime_error("bad input");
+
+
+//    function->setArg(stod(f.substr(bracketIndex, f.rfind(')'))));
+    auto mulIndex = f.rfind('*');
+    double k = pow(-1, negative);
+    if (mulIndex != string::npos) {
+        function->setK(k * stod(f.substr(mulIndex)));
+    } else {
+        function->setK(k);
+    }
+    return function;
+
+}
+
+vector<Function *> *functionFactory(const string &function) {
     unsigned long i = 0;
     unsigned long start = 0;
-    auto *res = new vector<string>();
+    auto *res = new vector<Function *>();
     while (function[i] != '\0') {
-        if (mathSymbols.find(function[i]) != string::npos) {
-            res->push_back(function.substr(start, i - start));
-            string tmp(1, function[i]);
-            res->push_back(tmp);
-
+        if (function[i] == '+') {
+            res->push_back(parseString(function.substr(start, i - start)));
+            start = i + 1;
+        } else if (function[i] == '-') {
+            res->push_back(parseString(function.substr(start, i - start), true));
             start = i + 1;
         }
         ++i;
     }
-    res->push_back(function.substr(start, i - start));
     return res;
 }
 
-vector<Function *> *functionFactory(const vector<string> &values) {
-    vector<Function *> *result = new vector<Function *>();
-    for (int i = 0; i < values.size(); i += 2) {
-        if (values[i].rfind("cos", 0) == 0) {
-            result->push_back(new Cos());
-        } else if (values[i].rfind("sin", 0) == 0) {
-            result->push_back(new Sin());
-        } else if (values[i].rfind("e^", 0) == 0) {
-            result->push_back(new Exp());
-        } else {
-            throw runtime_error("bad input");
-        }
+double f(double x, vector<Function *> functions) {
+    for (int i = 1; i < functions.size(); i++) {
+        x += functions[i]->countValue(x);
     }
-    return result;
-}
 
-double f(double x, vector<Function *> functions, vector<string> symbols) {
-    int r = 1;
-    for (int i = 1; i < symbols.size() - 1; i += 2) {
-
-        if (symbols[i] == "+") {
-            x += functions[r]->countValue(x);
-        } else if (symbols[i] == "-") {
-            x -= functions[r]->countValue(x);
-        }
-        r++;
-    }
     return functions[0]->revers(x);
     //return asin(-exp(x));
 }
 
 int main() {
 
-    double p, p0 = 1, eps = 0.00001;
+    double p, p0, eps = 0.00001;
     int i = 0, N = 10000;
 
     string function = "cos(x)-e^(x)=0";
 
-    vector<string> *parsed = parseStringWithFunctions(function);
 
-    vector<Function *> *functions = functionFactory(*parsed);
+    vector<Function *> *functions = functionFactory(function);
 
-    p = f(0, *functions, *parsed);
+    p = f(0, *functions);
     do {
         p0 = p;
-        p = f(p0, *functions, *parsed);
+        p = f(p0, *functions);
     } while (abs(p - p0) > eps);
     cout << p;
     //cin >> function;
-    parseStringWithFunctions(function);
-
 
     return 0;
 }
