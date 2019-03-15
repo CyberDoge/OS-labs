@@ -7,19 +7,19 @@
 
 class Function
 {
-protected:
+  protected:
     double k = 1;
     double arg = 1;
 
   public:
     virtual double countValue(double value) = 0;
 
-    virtual double setK(double value)
+    double setK(double value)
     {
         k = value;
     };
 
-    virtual double setArg(double value)
+    double setArg(double value)
     {
         arg = value;
     };
