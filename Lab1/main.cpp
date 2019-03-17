@@ -68,10 +68,7 @@ int main() {
 //    string function = "0.07*e^(x) + cos(x)=x";
     string functionStr[] = {
             "0.07*e^(x) + cos(x)=x",
-            "-0.07*e^(x) + sin(x)",
-            "ln(x) + 0.07*",
-            "0*e^(x) cos(x)=x",
-            "*1e^(x) + cos(x)=x",
+
     };
     int iter = 0;
     for (const auto &function : functionStr) {
