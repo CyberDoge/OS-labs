@@ -48,10 +48,10 @@ RM = /opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cyberdoge/OS-labs/Lab2
+CMAKE_SOURCE_DIR = /home/cyberdoge/Project/lab/OS-labs/Lab2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cyberdoge/OS-labs/Lab2/cmake-build-debug
+CMAKE_BINARY_DIR = /home/cyberdoge/Project/lab/OS-labs/Lab2/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cyberdoge/OS-labs/Lab2/cmake-build-debug/CMakeFiles /home/cyberdoge/OS-labs/Lab2/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cyberdoge/Project/lab/OS-labs/Lab2/cmake-build-debug/CMakeFiles /home/cyberdoge/Project/lab/OS-labs/Lab2/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cyberdoge/OS-labs/Lab2/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cyberdoge/Project/lab/OS-labs/Lab2/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -150,32 +150,32 @@ client.cpp.s:
 	$(MAKE) -f CMakeFiles/Lab2.dir/build.make CMakeFiles/Lab2.dir/client.cpp.s
 .PHONY : client.cpp.s
 
-main.o: main.cpp.o
+server.o: server.cpp.o
 
-.PHONY : main.o
+.PHONY : server.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/Lab2.dir/build.make CMakeFiles/Lab2.dir/main.cpp.o
-.PHONY : main.cpp.o
+server.cpp.o:
+	$(MAKE) -f CMakeFiles/Lab2.dir/build.make CMakeFiles/Lab2.dir/server.cpp.o
+.PHONY : server.cpp.o
 
-main.i: main.cpp.i
+server.i: server.cpp.i
 
-.PHONY : main.i
+.PHONY : server.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/Lab2.dir/build.make CMakeFiles/Lab2.dir/main.cpp.i
-.PHONY : main.cpp.i
+server.cpp.i:
+	$(MAKE) -f CMakeFiles/Lab2.dir/build.make CMakeFiles/Lab2.dir/server.cpp.i
+.PHONY : server.cpp.i
 
-main.s: main.cpp.s
+server.s: server.cpp.s
 
-.PHONY : main.s
+.PHONY : server.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/Lab2.dir/build.make CMakeFiles/Lab2.dir/main.cpp.s
-.PHONY : main.cpp.s
+server.cpp.s:
+	$(MAKE) -f CMakeFiles/Lab2.dir/build.make CMakeFiles/Lab2.dir/server.cpp.s
+.PHONY : server.cpp.s
 
 # Help Target
 help:
@@ -189,9 +189,9 @@ help:
 	@echo "... client.o"
 	@echo "... client.i"
 	@echo "... client.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... server.o"
+	@echo "... server.i"
+	@echo "... server.s"
 .PHONY : help
 
 

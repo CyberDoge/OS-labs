@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/cyberdoge/OS-labs/Lab2/client.cpp" "/home/cyberdoge/OS-labs/Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/client.cpp.o"
-  "/home/cyberdoge/OS-labs/Lab2/main.cpp" "/home/cyberdoge/OS-labs/Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/main.cpp.o"
+  "/home/cyberdoge/Project/lab/OS-labs/Lab2/client.cpp" "/home/cyberdoge/Project/lab/OS-labs/Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/client.cpp.o"
+  "/home/cyberdoge/Project/lab/OS-labs/Lab2/server.cpp" "/home/cyberdoge/Project/lab/OS-labs/Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/server.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
