@@ -6,9 +6,10 @@
 #include <math.h>
 
 double Ln::countValue(double value) {
-    return k*-log(value);
+    return k*log(value);
 }
 
 double Ln::revers(double value) {
+    value /= Function::k;
     return exp(value);
 }

@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/cyberdoge/OS-labs/Lab1/function/Cos.h
+Function.h
+/home/cyberdoge/OS-labs/Lab1/function/Function.h
+
+/home/cyberdoge/OS-labs/Lab1/function/Exp.h
+Function.h
+/home/cyberdoge/OS-labs/Lab1/function/Function.h
+
+/home/cyberdoge/OS-labs/Lab1/function/Function.h
+
+/home/cyberdoge/OS-labs/Lab1/function/Ln.h
+Function.h
+/home/cyberdoge/OS-labs/Lab1/function/Function.h
+
+/home/cyberdoge/OS-labs/Lab1/function/Sin.h
+Function.h
+/home/cyberdoge/OS-labs/Lab1/function/Function.h
+
+/home/cyberdoge/OS-labs/Lab1/main.cpp
+iostream
+-
+vector
+-
+math.h
+-
+function/Function.h
+/home/cyberdoge/OS-labs/Lab1/function/Function.h
+function/Cos.h
+/home/cyberdoge/OS-labs/Lab1/function/Cos.h
+function/Sin.h
+/home/cyberdoge/OS-labs/Lab1/function/Sin.h
+function/Exp.h
+/home/cyberdoge/OS-labs/Lab1/function/Exp.h
+function/Ln.h
+/home/cyberdoge/OS-labs/Lab1/function/Ln.h
+

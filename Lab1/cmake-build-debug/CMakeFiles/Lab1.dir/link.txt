@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Lab1.dir/main.cpp.o CMakeFiles/Lab1.dir/function/Sin.cpp.o CMakeFiles/Lab1.dir/function/Cos.cpp.o CMakeFiles/Lab1.dir/function/Exp.cpp.o CMakeFiles/Lab1.dir/function/Ln.cpp.o  -o Lab1 

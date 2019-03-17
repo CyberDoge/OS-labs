@@ -42,10 +42,7 @@ vector<Function *> *functionFactory(const string &function) {
     unsigned long start = i;
     auto *res = new vector<Function *>();
     while (i != 0) {
-        if (function[i] == '+') {
-            res->push_back(parseString(function.substr(i, start)));
-            start = i;
-        } else if (function[i] == '-') {
+        if (function[i] == '+' || function[i] == '-') {
             res->push_back(parseString(function.substr(i, start)));
             start = i;
         }
@@ -57,32 +54,41 @@ vector<Function *> *functionFactory(const string &function) {
 }
 
 double f(double x, vector<Function *> functions) {
-    for (int i = 1; i < functions.size(); i++) {
-        x += functions[i]->countValue(x);
+    double res = 0;
+    for (auto &function : functions) {
+        res += function->countValue(x);
     }
-    cout<<x<<";";
-    cout<<functions[0]->revers(x)<<endl;
-    return functions[0]->revers(x);
+    return res;
     //return asin(-exp(x));
 }
 
 int main() {
 
-    double p, p0, eps = 0.00001;
-    int i = 0, N = 10000;
 
-    string function = "-15*cos(x)+1*e^(x)=0";
+//    string function = "0.07*e^(x) + cos(x)=x";
+    string functionStr[] = {
+            "0.07*e^(x) + cos(x)=x",
 
-
-    vector<Function *> *functions = functionFactory(function);
-
-    p = f(0.3, *functions);
-    do {
-        p0 = p;
-        p = f(p0, *functions);
-    } while (abs(p - p0) > eps);
-    cout << p;
-    //cin >> function;
+    };
+    int iter = 0;
+    for (const auto &function : functionStr) {
+        double p, p0, eps = 0.00001;
+        int i = 0, N = 10000;
+        try {
+            vector<Function *> *functions = functionFactory(function);
+            p = f(0.3, *functions);
+            do {
+                p0 = p;
+                p = f(p0, *functions);
+                i++;
+            } while (abs(p - p0) > eps);
+            cout << "iteration " << iter << "; res = " << p << "; i = " << i << endl;
+            iter++;
+        } catch (exception e) {
+            cout << "bad input"<< endl;
+            exit(-3);
+        }
+    }
 
     return 0;
 }
