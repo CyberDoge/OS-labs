@@ -3,43 +3,78 @@
 #include <fcntl.h>
 #include <cstring>
 #include <unistd.h>
+#include <vector>
+#include <algorithm>
 
 using namespace std;
 
+char *parseInput(char *input, int type);
+
+int validateAndParse(char *input);
+
+char *formula;
+
+vector<string> commands{"clear", "count"};
 
 int main() {
-    int fd;
+    int fd1;
 
-    // FIFO file path
     char *myfifo = "/tmp/myfifo";
 
-    // Creating the named file(FIFO)
-    // mkfifo(<pathname>, <permission>)
-    mkfifo(myfifo, 0666);
 
-    char arr1[80], arr2[80];
-    while (1) {
-        // Open FIFO for write only
-        fd = open(myfifo, O_WRONLY);
+    mkfifo(myfifo, 765);
 
-        // Take an input arr2ing from user.
-        // 80 is maximum length
-        fgets(arr2, 80, stdin);
+    char inputStr[80];
+    char *outputStr;
+    fd1 = open(myfifo, O_RDWR);
+    while (true) {
+        read(fd1, inputStr, 80);
+        if (strcmp(inputStr, "exit")) {
+            write(fd1, "disconnect", 10);
+            break;
+        }
+        int type = validateAndParse(inputStr);
+        if (type < 0) {
+            write(fd1, "bad input", 9);
+            continue;
+        }
 
-        // Write the input arr2ing on FIFO
-        // and close it
-        write(fd, arr2, strlen(arr2) + 1);
-        close(fd);
+        outputStr = parseInput(inputStr, type);
 
-        // Open FIFO for Read only
-        fd = open(myfifo, O_RDONLY);
-
-        // Read from FIFO
-        read(fd, arr1, sizeof(arr1));
-
-        // Print the read message
-        printf("User2: %s\n", arr1);
-        close(fd);
+        write(fd1, outputStr, strlen(outputStr) + 1);
     }
+    close(fd1);
     return 0;
 }
+
+char *parseInput(char *input, int type) {
+    switch (type) {
+        case 1:
+            strcat(formula, input);
+            return formula;
+        case 2:
+
+        default:
+            throw runtime_error("unknown error");
+    }
+}
+
+
+int validateAndParse(char *input) {
+    if (strlen(input) == 0 || strcmp(input, "\0")) {
+        return -1;
+    }
+
+    string tmp(input);
+    if (find(commands.begin(), commands.end(), tmp) != commands.end()) {
+        return 1;
+    }
+
+    for (int i = 0; i < strlen(input); ++i) {
+        if (input[i] < 58 && input[i] > 39) {
+            return 2;
+        }
+    }
+    return -1;
+}
+
