@@ -9,22 +9,26 @@
 
 using namespace std;
 
-int main() {
+int amain() {
     int fd1;
 
     char *myfifo = "/tmp/myfifo";
 
 
-    mkfifo(myfifo, 765);
+    mkfifo(myfifo, O_RDWR);
+
+    fd1 = open(myfifo, O_RDWR);
+
 
     char inputStr[80], outputStr[80];
-    fd1 = open(myfifo, O_RDWR);
     do {
+        fgets(outputStr, 80, stdin);
+
+        write(fd1, outputStr, strlen(outputStr) + 1);
+
         read(fd1, inputStr, 80);
         printf("server: %s\n", inputStr);
-        fgets(outputStr, 80, stdin);
-        write(fd1, outputStr, strlen(outputStr) + 1);
-    }while(strcmp(outputStr, "exit"));
+    } while (strcmp(outputStr, "exit"));
     close(fd1);
     return 0;
 }

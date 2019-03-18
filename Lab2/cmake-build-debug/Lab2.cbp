@@ -84,9 +84,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/cyberdoge/Project/lab/OS-labs/Lab2/client.cpp">
-			<Option target="Lab2"/>
-		</Unit>
 		<Unit filename="/home/cyberdoge/Project/lab/OS-labs/Lab2/server.cpp">
 			<Option target="Lab2"/>
 		</Unit>
