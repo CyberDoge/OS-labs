@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/cyberdoge/server/main.cpp
+iostream
+-
+sys/stat.h
+-
+fcntl.h
+-
+cstring
+-
+unistd.h
+-
+vector
+-
+algorithm
+-
+
