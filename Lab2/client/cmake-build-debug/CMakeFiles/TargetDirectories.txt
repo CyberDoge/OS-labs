@@ -1,3 +1,3 @@
-/home/cyberdoge/client/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/cyberdoge/client/cmake-build-debug/CMakeFiles/client.dir
-/home/cyberdoge/client/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/cyberdoge/Project/lab/OS-labs/Lab2/client/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/cyberdoge/Project/lab/OS-labs/Lab2/client/cmake-build-debug/CMakeFiles/client.dir
+/home/cyberdoge/Project/lab/OS-labs/Lab2/client/cmake-build-debug/CMakeFiles/edit_cache.dir

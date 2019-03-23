@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/cyberdoge/server/main.cpp
+/home/cyberdoge/Project/lab/OS-labs/Lab2/server/main.cpp
 iostream
 -
 sys/stat.h

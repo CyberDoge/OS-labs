@@ -8,62 +8,68 @@
 
 using namespace std;
 
-char *parseInput(char *input, int type);
-
-int validateAndParse(char *input);
-
+bool inLoop = true;
 char *formula = new char[0];
 
-vector<string> commands{"clear", "count"};
+const char *myfifo = "/tmp/myfifo";
+const vector<string> commands{"exit", "clear", "count"};
 
 int expression();
 
+const char *parseInput(char *input, int type);
+
+int validateAndParse(char *input);
+
+void send(const char *outputStr) {
+    int fd = open(myfifo, O_WRONLY);
+    write(fd, outputStr, strlen(outputStr) + 1);
+    close(fd);
+};
+
+char *read() {
+    char *inputStr = new char[80];
+    int fd = open(myfifo, O_RDONLY);
+    read(fd, inputStr, 80);
+    printf("User: %s\n", inputStr);
+    close(fd);
+    return inputStr;
+}
+
 int main() {
-
-    char *myfifo = "/tmp/myfifo";
-
     remove(myfifo);
 
-    int fd = mkfifo(myfifo, S_IWUSR | S_IRUSR | S_IRGRP | S_IROTH);
-
-    cout << "pipe " << fd << endl;
-
-    char inputStr[80];
-    char *outputStr;
+    if (mkfifo(myfifo, S_IWUSR | S_IRUSR | S_IRGRP | S_IROTH) < 0) {
+        throw new runtime_error("cannot create pipe");
+    }
 
     cout << "started" << endl;
-    while (true) {
+    while (inLoop) {
+        char *inputStr = read();
 
-        fd = open(myfifo, O_RDONLY);
-        read(fd, inputStr, 80);
-        // Print the read string and close
-        printf("User1: %s\n", inputStr);
-        close(fd);
-        if (!strcmp(inputStr, "exit")) {
-            write(fd, "disconnect", 10);
-            break;
-        }
         int type = validateAndParse(inputStr);
-        if (type < 0) {
-            cout << inputStr << " bad str, type = " << type << endl;
-            outputStr = "bad input\n";
-        }else {
-            outputStr = parseInput(inputStr, type);
-        }
-        fd = open(myfifo, O_WRONLY);
-        write(fd, outputStr, strlen(outputStr) + 1);
-        close(fd);
+        send(parseInput(inputStr, type));
+
     }
     return 0;
 }
 
-char *parseInput(char *input, int type) {
+const char *parseInput(char *input, int type) {
     switch (type) {
         case 1:
-            return "hopa";
-        case 2:
-            strcat(formula, input);
-            return formula;
+            if (input == commands[0]) {
+                inLoop = false;
+                return "disconnect";
+            } else if (input == commands[1]) {
+                delete formula;
+                return formula;
+
+            } else if (input == commands[2]) {
+                return to_string(expression()).c_str();
+            }
+        case 0:
+            return strcat(formula, input);
+        case -1:
+            return "bad input";
         default:
             throw runtime_error("unknown error");
     }
@@ -73,34 +79,30 @@ int validateAndParse(char *input) {
     if (strlen(input) < 2 || !strcmp(input, "\0")) {
         return -1;
     }
-
-    input[strlen(input) - 1] = '\0';
-    string tmp(input);
-
-    if (find(commands.begin(), commands.end(), tmp) != commands.end()) {
+    if (find(commands.begin(), commands.end(), input) != commands.end()) {
         return 1;
     }
 
-    if (input[0] != '-' && input[0] != '+' && input[0] != '*' && input[0] != '/') {
+    if (strlen(formula) != 0 && (input[0] != '-' && input[0] != '+' && input[0] != '*' && input[0] != '/')) {
         return -1;
     }
 
     for (int i = 0; i < strlen(input); ++i) {
-        if (input[i] > 57 || input[i] < 40) {
+        if (input[i] > 57 || input[i] < 42) {
             return -1;
         }
     }
 
-    return 2;
+    return 0;
 }
 
-
+int f_i;
 char peek() {
-    return *formula;
+    return formula[f_i];
 }
 
 char get() {
-    return *formula++;
+    return formula[f_i++];
 }
 
 
@@ -138,6 +140,7 @@ int term() {
 }
 
 int expression() {
+    f_i = 0;
     int result = term();
     while (peek() == '+' || peek() == '-')
         if (get() == '+')

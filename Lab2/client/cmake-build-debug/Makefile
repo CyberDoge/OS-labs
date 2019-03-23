@@ -48,10 +48,10 @@ RM = /opt/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cyberdoge/client
+CMAKE_SOURCE_DIR = /home/cyberdoge/Project/lab/OS-labs/Lab2/client
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cyberdoge/client/cmake-build-debug
+CMAKE_BINARY_DIR = /home/cyberdoge/Project/lab/OS-labs/Lab2/client/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cyberdoge/client/cmake-build-debug/CMakeFiles /home/cyberdoge/client/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cyberdoge/Project/lab/OS-labs/Lab2/client/cmake-build-debug/CMakeFiles /home/cyberdoge/Project/lab/OS-labs/Lab2/client/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cyberdoge/client/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cyberdoge/Project/lab/OS-labs/Lab2/client/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

@@ -16,9 +16,8 @@ int main() {
     char inputStr[80], outputStr[80];
     do {
         fd = open(myfifo, O_WRONLY);
-
         fgets(outputStr, 80, stdin);
-
+        outputStr[strlen(outputStr) - 1] = '\0';
         write(fd, outputStr, strlen(outputStr)+1);
         close(fd);
 
@@ -28,6 +27,7 @@ int main() {
 
         printf("server: %s\n", inputStr);
         close(fd);
-    } while (strcmp(outputStr, "exit"));
+    } while (strcmp(inputStr, "disconnect"));
+    cout<<"exit"<<endl;
     return 0;
 }

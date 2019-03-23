@@ -1,4 +1,4 @@
-# Install script for directory: /home/cyberdoge/server
+# Install script for directory: /home/cyberdoge/Project/lab/OS-labs/Lab2/server
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/cyberdoge/server/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/cyberdoge/Project/lab/OS-labs/Lab2/server/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

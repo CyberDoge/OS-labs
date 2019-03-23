@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/cyberdoge/Project/lab/OS-labs/Lab2/client/main.cpp
+/home/cyberdoge/Project/lab/OS-labs/Lab2/server.cpp
 iostream
 -
 sys/stat.h
@@ -16,5 +16,9 @@ fcntl.h
 cstring
 -
 unistd.h
+-
+vector
+-
+algorithm
 -
 
