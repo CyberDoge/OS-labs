@@ -9,8 +9,6 @@
 /home/cyberdoge/Project/lab/OS-labs/Lab2/client/main.cpp
 iostream
 -
-sys/stat.h
--
 fcntl.h
 -
 cstring

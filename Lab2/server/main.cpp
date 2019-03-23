@@ -76,7 +76,7 @@ const char *parseInput(char *input, int type) {
 }
 
 int validateAndParse(char *input) {
-    if (strlen(input) < 2 || !strcmp(input, "\0")) {
+    if ((strlen(formula) != 0 && strlen(input) < 2) || !strcmp(input, "\0")) {
         return -1;
     }
     if (find(commands.begin(), commands.end(), input) != commands.end()) {
@@ -87,8 +87,8 @@ int validateAndParse(char *input) {
         return -1;
     }
 
-    for (int i = 0; i < strlen(input); ++i) {
-        if (input[i] > 57 || input[i] < 42) {
+    for (int i = 1; i < strlen(input); ++i) {
+        if (input[i] > 57 || input[i] < 48) {
             return -1;
         }
     }

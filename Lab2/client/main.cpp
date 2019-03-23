@@ -2,7 +2,6 @@
 // Created by cyberdoge on 3/15/19.
 //
 #include <iostream>
-#include <sys/stat.h>
 #include <fcntl.h>
 #include <cstring>
 #include <unistd.h>
@@ -18,7 +17,7 @@ int main() {
         fd = open(myfifo, O_WRONLY);
         fgets(outputStr, 80, stdin);
         outputStr[strlen(outputStr) - 1] = '\0';
-        write(fd, outputStr, strlen(outputStr)+1);
+        write(fd, outputStr, strlen(outputStr) + 1);
         close(fd);
 
         fd = open(myfifo, O_RDONLY);
@@ -28,6 +27,6 @@ int main() {
         printf("server: %s\n", inputStr);
         close(fd);
     } while (strcmp(inputStr, "disconnect"));
-    cout<<"exit"<<endl;
+    cout << "exit" << endl;
     return 0;
 }
