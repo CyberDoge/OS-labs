@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.AnchorPane?>
-<AnchorPane xmlns:fx="http://javafx.com/fxml"
-            xmlns="http://javafx.com/javafx"
-            fx:controller="io.lab.ProcessController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.lab.controller.ProcessController">
+   <children>
+      <ScrollPane prefHeight="400.0" prefWidth="257.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" />
+        </content>
+      </ScrollPane>
+   </children>
 </AnchorPane>
