@@ -76,6 +76,7 @@ const char *parseInput(char *input, int type) {
         case 1:
             if (input == commands[1]) {
                 connected = false;
+                cout << "user disconnect" << endl;
                 return "disconnect";
             } else if (input == commands[2]) {
                 formula->clear();
