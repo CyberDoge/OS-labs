@@ -23,6 +23,7 @@ public class MainController implements Initializable {
         socket = new Socket("localhost", 8080);
         dataInputStream = new DataInputStream(socket.getInputStream());
         dataOutputStream = new DataOutputStream(socket.getOutputStream());
+        dataOutputStream.writeChars("228");
     }
 
 
@@ -32,7 +33,7 @@ public class MainController implements Initializable {
 
     public void send() throws IOException {
         if(message.getText().isBlank()) return;
-        dataOutputStream.writeBytes(message.getText());
+        dataOutputStream.writeChars(message.getText());
         message.setText("");
     }
 

@@ -10,56 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7661632-f34d-4257-8a63-be91fe3eb2bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Lab2/client/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/a.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab2/client/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/a.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab2/client/cmake-build-debug/CMakeFiles/client.dir/main.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/a.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/a.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/server.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab2/server/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/a.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab2/server/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/a.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab2/server/cmake-build-debug/CMakeFiles/server.dir/main.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/lab/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/main.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server/src/main/java/io/lab/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server/src/main/java/io/lab/controller/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server/src/main/java/io/lab/controller/ProcessController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server/src/main/java/io/lab/model/ServerModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server/target/classes/io/lab/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server/target/classes/io/lab/model/ServerModel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server/target/classes/process.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server/target/classes/start-page.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server/target/maven-status/maven-compiler-plugin/compile/default-cli/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Server/target/maven-status/maven-compiler-plugin/compile/default-cli/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/.idea/artifacts/JavaFXApp.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/.idea/libraries/javafx_swt.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/src/main/java/io/lab/controller/ProcessControllerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/src/main/java/io/lab/model/Connection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Server/src/main/java/io/lab/process/MessageReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/Server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/Server.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/out/production/Server/META-INF/Server.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/out/production/Server/module-info.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/out/production/Server/org/lab/Controller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/out/production/Server/org/lab/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/out/production/Server/org/lab/model/ServerModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/out/production/Server/org/lab/start-page.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/main/java/io/lab/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/main/java/io/lab/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/main/java/io/lab/controller/ProcessController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/main/java/io/lab/controller/ProcessController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/main/java/io/lab/model/ServerModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/main/java/io/lab/model/ServerModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/src/main/resources/process.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/main/resources/process.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/src/main/resources/start-page.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/main/resources/start-page.fxml" afterDir="false" />
     </list>
@@ -76,25 +38,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/lab/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="60">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/Downloads/NASMHello.asm">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/main.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor">
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+          <provider editor-type-id="text-editor">
             <state relative-caret-position="225">
               <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
             </state>
@@ -104,8 +57,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+            <state relative-caret-position="390">
+              <caret line="36" column="28" lean-forward="true" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -128,9 +81,9 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/main.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/lab/Main.java" />
         <option value="$USER_HOME$/Downloads/NASMHello.asm" />
+        <option value="$PROJECT_DIR$/src/main/java/MainController.java" />
       </list>
     </option>
   </component>
@@ -148,10 +101,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1" />
-    <option name="y" value="29" />
-    <option name="width" value="1682" />
-    <option name="height" value="1022" />
+    <option name="x" value="766" />
+    <option name="y" value="-331" />
+    <option name="width" value="832" />
+    <option name="height" value="1023" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -161,8 +114,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -191,25 +142,24 @@
             <path>
               <item name="Client" type="b2602c69:ProjectViewProjectNode" />
               <item name="Client" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Client" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lab" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554648639228" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/NASMHello.asm" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Server" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -290,8 +240,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="29" width="1682" height="1022" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1847561" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19573171" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -339,23 +290,8 @@
     <entry file="file://$PROJECT_DIR$/pom.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/io/lab/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/main.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+        <state relative-caret-position="60">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -363,6 +299,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="36" column="28" lean-forward="true" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/main.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
         </state>
       </provider>
     </entry>

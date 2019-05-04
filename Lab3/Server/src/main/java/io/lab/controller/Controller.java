@@ -1,6 +1,5 @@
 package io.lab.controller;
 
-import javafx.beans.value.ChangeListener;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -43,11 +42,8 @@ public class Controller {
             }
         });
         password.textProperty().addListener((observable, oldValue, newValue)->{
-            if (!newValue.matches("\\sa-zA-Z0-9*")) {
-                password.setText(newValue.replaceAll("[^\\sa-zA-Z0-9]", ""));
-            }
-            if(newValue.contains(" ")){
-                password.setText(newValue.replaceAll(" ", ""));
+            if (!newValue.matches("a-zA-Z0-9{1,5}")) {
+                password.setText(newValue.replaceAll("[^a-zA-Z0-9]", ""));
             }
             if(newValue.length() > 5)
                 password.setText(oldValue);
@@ -80,6 +76,10 @@ public class Controller {
             return;
         }
 
+        openNewScene(port, clients);
+    }
+
+    private void openNewScene(int port, int clients) throws IOException {
         Stage primaryStage = ((Stage) portInput.getScene().getWindow());
         primaryStage.close();
 
