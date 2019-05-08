@@ -18,8 +18,14 @@ public class ServerModel implements Closeable {
         if (port < 1) throw new IllegalArgumentException("port have to be more then 0");
         this.serverSocket = new ServerSocket(port);
         this.service = Executors.newFixedThreadPool(2);
-        for (int i = 0; i < clientCount; i++) {
-            this.service.submit(new Connection(this.serverSocket.accept(), messageReader));
+        for (int i = 0; i < 1; i++) {
+            new Thread(()-> {
+                try {
+                    this.service.submit(new Connection(this.serverSocket.accept(), messageReader));
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }).start();
         }
     }
 

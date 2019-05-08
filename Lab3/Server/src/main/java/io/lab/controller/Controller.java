@@ -85,6 +85,7 @@ public class Controller {
 
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/process.fxml"));
         Parent root = fxmlLoader.load();
+
         ProcessController processController = fxmlLoader.getController();
         processController.init(port, clients);
 

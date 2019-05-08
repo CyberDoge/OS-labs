@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextArea?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
-    <content>
-        <VBox id="messageVbox" prefHeight="397.0" prefWidth="357.0" />
-    </content>
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.lab.controller.ProcessControllerImpl">
+   <content>
+      <TextArea fx:id="textArea" prefHeight="200.0" prefWidth="200.0" />
+   </content>
 </ScrollPane>

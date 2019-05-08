@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b2eb7eaa-fe3c-4564-beeb-71f1d97c45fe" name="Default Changelist" comment="сервер ебать">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/lab/controller/ProcessControllerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/lab/model/Connection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/lab/process/MessageReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/.idea/codeStyles/Project.xml" afterDir="false" />
+    <list default="true" id="b2eb7eaa-fe3c-4564-beeb-71f1d97c45fe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client/src/main/java/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/main/java/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/src/main/java/io/lab/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/main/java/io/lab/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/src/main/resources/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/main/resources/io/lab/main.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/lab/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/lab/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/lab/controller/ProcessController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/lab/controller/ProcessController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/lab/controller/ProcessControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/lab/controller/ProcessControllerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/lab/model/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/lab/model/Connection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/lab/model/ServerModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/lab/model/ServerModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/process.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/process.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/start-page.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/start-page.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,6 +25,11 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Server$Main.ic" NAME="Main Coverage Results" MODIFIED="1557339269992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>io.lab.controller.*</FILTER>
+    </SUITE>
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="Server" />
   </component>
@@ -33,59 +38,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/lab/model/Connection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="30" lean-forward="true" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+            <state relative-caret-position="292">
+              <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/lab/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#496#497#0" expanded="true" />
-                <element signature="e#524#525#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/start-page.fxml">
-          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/lab/controller/ProcessControllerImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="67" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#565#566#0" expanded="true" />
-                <element signature="e#597#598#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/process.fxml">
-          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -93,8 +50,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/lab/controller/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="62" selection-start-line="62" selection-end-line="62" />
+            <state relative-caret-position="505">
+              <caret line="91" selection-start-line="91" selection-end-line="91" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/process.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="31" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="31" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/start-page.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/lab/controller/ProcessControllerImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#672#673#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -102,26 +95,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/lab/model/ServerModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="21" column="88" lean-forward="true" selection-start-line="21" selection-start-column="88" selection-end-line="21" selection-end-column="88" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/lab/controller/ProcessController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/lab/process/MessageReader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+            <state relative-caret-position="217">
+              <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -148,13 +123,13 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/start-page.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/io/lab/controller/Controller.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/lab/process/MessageReader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/lab/model/Connection.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/lab/controller/ProcessController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/lab/model/ServerModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/lab/model/Connection.java" />
         <option value="$PROJECT_DIR$/src/main/resources/process.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/io/lab/controller/Controller.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/lab/controller/ProcessControllerImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/lab/model/ServerModel.java" />
       </list>
     </option>
   </component>
@@ -206,10 +181,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="766" />
-    <option name="y" value="-331" />
-    <option name="width" value="832" />
-    <option name="height" value="1023" />
+    <option name="x" value="840" />
+    <option name="y" value="29" />
+    <option name="width" value="840" />
+    <option name="height" value="1021" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -219,8 +194,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -277,15 +250,6 @@
               <item name="Server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lab" type="462c0819:PsiDirectoryNode" />
-              <item name="process" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -298,13 +262,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557003520871" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557344132127" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -425,7 +391,14 @@
       <option name="project" value="LOCAL" />
       <updated>1554632590480</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="чото написал, пора в дотку">
+      <created>1557003580851</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1557003580851</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -439,9 +412,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="29" width="1682" height="1022" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49752066" visible="true" weight="0.08841463" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49752066" visible="true" weight="0.17256097" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -454,7 +426,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.4467849" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991131" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.36141908" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" show_stripe_button="false" weight="0.3292683" />
@@ -466,8 +438,9 @@
       <window_info anchor="bottom" id="Console" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="bottom" id="Messages" order="14" show_stripe_button="false" weight="0.3292683" />
+      <window_info anchor="right" id="Coverage" sideWeight="0.501002" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" sideWeight="0.498998" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Maven" order="3" weight="0.16585366" />
       <window_info anchor="right" id="Palette" order="4" />
@@ -515,10 +488,56 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="сервер ебать" />
-    <option name="LAST_COMMIT_MESSAGE" value="сервер ебать" />
+    <MESSAGE value="чото написал, пора в дотку" />
+    <MESSAGE value="работает, ебать" />
+    <MESSAGE value="работает отправка и получение сообщений" />
+    <option name="LAST_COMMIT_MESSAGE" value="работает отправка и получение сообщений" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///usr/lib/jvm/bellsoft-java12-amd64/lib/src.zip!/java.base/java/io/InputStream.java</url>
+          <line>446</line>
+          <properties />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>this</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>fxmlLoader.getController()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>textArea.setText(textArea.getText()   + message);</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>fxmlLoader.setController(new ProcessControllerImpl());</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>fxmlLoader.load()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>getClass().getResource(&quot;/process.fxml&quot;)</expression-string>
         <language-id>JAVA</language-id>
@@ -544,26 +563,6 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>getClass().getResource(&quot;../../&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>getClass().getResource(&quot;&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>getClass().getResource(&quot;start-page.fxml&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>getClass().getResource(&quot;io/lab/start-page.fxml&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
@@ -576,13 +575,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/bellsoft-java12-amd64/lib/src.zip!/java.base/java/util/concurrent/Executor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-732">
@@ -611,49 +603,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/lab/controller/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/lab/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#496#497#0" expanded="true" />
-            <element signature="e#524#525#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/lab/model/Connection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="30" lean-forward="true" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/lab/process/MessageReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/lab/controller/ProcessController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/bellsoft-java12-amd64/lib/src.zip!/java.base/java/net/ServerSocket.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
@@ -668,37 +617,287 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/lab/model/ServerModel.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="21" column="88" lean-forward="true" selection-start-line="21" selection-start-column="88" selection-end-line="21" selection-end-column="88" />
+        <state relative-caret-position="297">
+          <caret line="27" column="32" lean-forward="true" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/lab/process/MessageReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/bellsoft-java12-amd64/lib/src.zip!/java.base/java/io/DataInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="367" column="8" selection-start-line="367" selection-start-column="8" selection-end-line="367" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/bellsoft-java12-amd64/lib/src.zip!/java.base/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="834" selection-start-line="834" selection-end-line="834" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/bellsoft-java12-amd64/lib/src.zip!/java.base/java/util/concurrent/CountDownLatch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="231" selection-start-line="231" selection-end-line="231" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/bellsoft-java12-amd64/lib/src.zip!/javafx.graphics/com/sun/javafx/application/LauncherImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="155" selection-start-line="155" selection-end-line="155" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/bellsoft-java12-amd64/lib/src.zip!/javafx.graphics/javafx/application/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="295" selection-start-line="295" selection-end-line="295" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/bellsoft-java12-amd64/lib/src.zip!/java.base/java/io/DataInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="665" selection-start-line="665" selection-end-line="665" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/bellsoft-java12-amd64/lib/src.zip!/java.base/java/lang/ref/Reference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="230" column="31" selection-start-line="230" selection-start-column="31" selection-end-line="230" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/bellsoft-java12-amd64/lib/src.zip!/java.base/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="349" column="29" selection-start-line="349" selection-start-column="29" selection-end-line="349" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/bellsoft-java12-amd64/lib/src.zip!/java.base/java/util/concurrent/Executors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="514" selection-start-line="514" selection-end-line="514" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/bellsoft-java12-amd64/lib/src.zip!/java.base/java/util/concurrent/ConcurrentHashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="919" selection-start-line="919" selection-end-line="919" />
+          <folding>
+            <element signature="e#42213#42214#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/bellsoft-java12-amd64/lib/src.zip!/java.base/java/lang/ClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="2692" selection-start-line="2692" selection-end-line="2692" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/bellsoft-java12-amd64/lib/src.zip!/java.base/java/net/AbstractPlainSocketImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="653" selection-start-line="653" selection-end-line="653" />
+          <folding>
+            <element signature="e#22247#22248#0" expanded="true" />
+            <element signature="e#22285#22286#0" expanded="true" />
+            <element signature="e#22862#22863#0" expanded="true" />
+            <element signature="e#22892#22893#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/bellsoft-java12-amd64/lib/src.zip!/java.base/java/io/InputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="446" selection-start-line="446" selection-end-line="446" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/bellsoft-java12-amd64/lib/src.zip!/javafx.graphics/com/sun/glass/ui/gtk/GtkApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="300" column="24" selection-start-line="300" selection-start-column="24" selection-end-line="300" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/bellsoft-java12-amd64/lib/src.zip!/java.base/sun/nio/cs/StreamDecoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="177" selection-start-line="177" selection-end-line="177" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/bellsoft-java12-amd64/lib/src.zip!/java.base/java/io/InputStreamReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="184" selection-start-line="184" selection-end-line="184" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/bellsoft-java12-amd64/lib/src.zip!/java.base/java/io/BufferedReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="325" selection-start-line="325" selection-end-line="325" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/bellsoft-java12-amd64/lib/src.zip!/java.base/java/net/SocketInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="168" selection-start-line="168" selection-end-line="168" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/bellsoft-java12-amd64/lib/src.zip!/java.base/jdk/internal/misc/Unsafe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="2295" column="23" selection-start-line="2295" selection-start-column="23" selection-end-line="2295" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/bellsoft-java12-amd64/lib/src.zip!/java.base/java/util/concurrent/locks/LockSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="193" selection-start-line="193" selection-end-line="193" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/bellsoft-java12-amd64/lib/src.zip!/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="2080" selection-start-line="2080" selection-end-line="2080" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/bellsoft-java12-amd64/lib/src.zip!/java.base/java/util/concurrent/LinkedBlockingQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="432" selection-start-line="432" selection-end-line="432" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/bellsoft-java12-amd64/lib/src.zip!/java.base/java/util/concurrent/ThreadPoolExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="627" selection-start-line="627" selection-end-line="627" />
+          <folding>
+            <element signature="e#26591#26592#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/lab/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#496#497#0" expanded="true" />
+            <element signature="e#524#525#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/lab/controller/ProcessController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/start-page.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/process.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="31" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="jar:///usr/lib/jvm/bellsoft-java12-amd64/lib/src.zip!/javafx.controls/javafx/scene/control/TextInputControl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="357" column="22" selection-start-line="357" selection-start-column="22" selection-end-line="357" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/process.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+    <entry file="jar:///usr/lib/jvm/bellsoft-java12-amd64/lib/src.zip!/java.base/java/net/PlainSocketImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="135" column="16" selection-start-line="135" selection-start-column="16" selection-end-line="135" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/lab/model/Connection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/bellsoft-java12-amd64/lib/src.zip!/javafx.fxml/javafx/fxml/FXMLLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="2262" column="17" selection-start-line="2262" selection-start-column="17" selection-end-line="2262" selection-end-column="17" />
+          <folding>
+            <element signature="e#87625#87626#0" expanded="true" />
+            <element signature="e#87661#87662#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/lab/model/ServerModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/lab/controller/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="91" selection-start-line="91" selection-end-line="91" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/lab/controller/ProcessControllerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="67" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
+        <state relative-caret-position="330">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#565#566#0" expanded="true" />
-            <element signature="e#597#598#0" expanded="true" />
+            <element signature="e#672#673#0" expanded="true" />
           </folding>
         </state>
       </provider>
