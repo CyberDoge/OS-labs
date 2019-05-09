@@ -1,4 +1,5 @@
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
 import java.io.*;
@@ -8,6 +9,9 @@ public class MainController implements Closeable {
 
     @FXML
     public TextField message;
+
+    @FXML
+    public Button btnSend;
 
     private Socket socket;
     private PrintWriter writer;
@@ -22,6 +26,9 @@ public class MainController implements Closeable {
         writer.println(message.getText());
         writer.flush();
         message.setText("");
+        message.setEditable(false);
+        btnSend.setDisable(true);
+        close();
     }
 
     public void close() throws IOException {

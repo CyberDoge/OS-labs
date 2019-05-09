@@ -1,6 +1,7 @@
 package io.lab.model;
 
 import io.lab.process.MessageReader;
+import javafx.concurrent.Task;
 
 import java.io.Closeable;
 import java.io.IOException;
@@ -18,15 +19,16 @@ public class ServerModel implements Closeable {
         if (port < 1) throw new IllegalArgumentException("port have to be more then 0");
         this.serverSocket = new ServerSocket(port);
         this.service = Executors.newFixedThreadPool(2);
-        for (int i = 0; i < 1; i++) {
-            new Thread(()-> {
+
+        new Thread(()->{
+            for (int i = 0; i < clientCount; i++) {
                 try {
-                    this.service.submit(new Connection(this.serverSocket.accept(), messageReader));
+                    service.submit(new Connection(serverSocket.accept(), messageReader));
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-            }).start();
-        }
+            }
+        }).start();
     }
 
     @Override
