@@ -9,10 +9,11 @@
 using namespace std;
 
 bool inLoop = true;
-char *formula = new char[0];
+bool connected = false;
+string *formula;
 
 const char *myfifo = "/tmp/myfifo";
-const vector<string> commands{"exit", "clear", "count"};
+const vector<string> commands{"", "exit", "clear", "count"};
 
 int expression();
 
@@ -20,54 +21,72 @@ const char *parseInput(char *input, int type);
 
 int validateAndParse(char *input);
 
-void send(const char *outputStr) {
+void send(const string *outputStr) {
     int fd = open(myfifo, O_WRONLY);
-    write(fd, outputStr, strlen(outputStr) + 1);
+    write(fd, outputStr->c_str(), outputStr->length() + 1);
     close(fd);
 };
 
 char *read() {
     char *inputStr = new char[80];
     int fd = open(myfifo, O_RDONLY);
+    if(!connected){
+        cout<<"user connected"<<endl;
+        connected = true;
+    }
     read(fd, inputStr, 80);
-    printf("User: %s\n", inputStr);
+    if (strlen(inputStr))
+        printf("User: %s\n", inputStr);
     close(fd);
     return inputStr;
 }
 
-int main() {
+void circle() {
     remove(myfifo);
 
     if (mkfifo(myfifo, S_IWUSR | S_IRUSR | S_IRGRP | S_IROTH) < 0) {
         throw new runtime_error("cannot create pipe");
     }
-
-    cout << "started" << endl;
+    if (formula != nullptr) {
+        formula->clear();
+    }
+    formula = new string();
     while (inLoop) {
         char *inputStr = read();
-
         int type = validateAndParse(inputStr);
-        send(parseInput(inputStr, type));
-
+        if (type == -2) {
+            cout << "user disconnect" << endl;
+            connected = false;
+            circle();
+        }
+        string *message = new string(parseInput(inputStr, type));
+        send(message);
+        message->clear();
+        delete[] inputStr;
     }
+}
+
+int main() {
+    circle();
     return 0;
 }
 
 const char *parseInput(char *input, int type) {
     switch (type) {
         case 1:
-            if (input == commands[0]) {
-                inLoop = false;
+            if (input == commands[1]) {
+                connected = false;
+                cout << "user disconnect" << endl;
                 return "disconnect";
-            } else if (input == commands[1]) {
-                delete formula;
-                return formula;
-
             } else if (input == commands[2]) {
+                formula->clear();
+                return "cleared";
+
+            } else if (input == commands[3]) {
                 return to_string(expression()).c_str();
             }
         case 0:
-            return strcat(formula, input);
+            return formula->append(input).c_str();
         case -1:
             return "bad input";
         default:
@@ -76,14 +95,15 @@ const char *parseInput(char *input, int type) {
 }
 
 int validateAndParse(char *input) {
-    if ((strlen(formula) != 0 && strlen(input) < 2) || !strcmp(input, "\0")) {
+    if (!strcmp(input, "")) return -2;
+    if ((formula->length() != 0 && strlen(input) < 2) || !strcmp(input, "\0")) {
         return -1;
     }
     if (find(commands.begin(), commands.end(), input) != commands.end()) {
         return 1;
     }
 
-    if (strlen(formula) != 0 && (input[0] != '-' && input[0] != '+' && input[0] != '*' && input[0] != '/')) {
+    if (formula->length() != 0 && (input[0] != '-' && input[0] != '+' && input[0] != '*' && input[0] != '/')) {
         return -1;
     }
 
@@ -96,26 +116,27 @@ int validateAndParse(char *input) {
     return 0;
 }
 
-int f_i;
+unsigned long f_i;
+
 char peek() {
-    return formula[f_i];
+    return formula->at(f_i);
 }
 
 char get() {
-    return formula[f_i++];
+    return formula->at(f_i++);
 }
 
 
 int number() {
     int result = get() - '0';
-    while (peek() >= '0' && peek() <= '9') {
+    while (f_i < formula->length() && peek() >= '0' && peek() <= '9') {
         result = 10 * result + get() - '0';
     }
     return result;
 }
 
 int factor() {
-    if (peek() >= '0' && peek() <= '9')
+    if (f_i < formula->length() && peek() >= '0' && peek() <= '9')
         return number();
     else if (peek() == '(') {
         get(); // '('
@@ -131,21 +152,23 @@ int factor() {
 
 int term() {
     int result = factor();
-    while (peek() == '*' || peek() == '/')
+    while (f_i < formula->length() && (peek() == '*' || peek() == '/')) {
         if (get() == '*')
             result *= factor();
         else
             result /= factor();
+    }
     return result;
 }
 
 int expression() {
     f_i = 0;
     int result = term();
-    while (peek() == '+' || peek() == '-')
+    while (f_i < formula->length() && (peek() == '+' || peek() == '-')) {
         if (get() == '+')
             result += term();
         else
             result -= term();
+    }
     return result;
 }
